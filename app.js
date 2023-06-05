@@ -7,6 +7,8 @@ const maxOfTwoNumbers = (x, y) => {
   }
 };
 
+console.log(maxOfTwoNumbers(7, 5));
+
 //2
 const maxOfThree = (x, y, z) => {
   let max = 0;
@@ -66,4 +68,24 @@ const reverseString = (str) => {
   return newString.join("");
 };
 
-console.log(reverseString("string"));
+//8
+const longestStringInArray = (strs) => {
+  let longest = "";
+  for (let i = 0; i < strs.length; i++) {
+    if (strs[i].length > longest.length) {
+      longest = strs[i];
+    }
+  }
+
+  return longest;
+};
+
+console.log(
+  longestStringInArray([
+    "string",
+    "ts",
+    "aaaaaaaaaaaaaaaaaaa",
+    "long",
+    "shortest",
+  ])
+);
