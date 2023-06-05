@@ -80,12 +80,21 @@ const longestStringInArray = (strs) => {
   return longest;
 };
 
+//9
+const stringsLongerThan = (strs, len) => {
+  let longstrs = [];
+  for (let i = 0; i < strs.length; i++) {
+    if (strs[i].length > len) {
+      longstrs.push(strs[i]);
+    }
+  }
+
+  return longstrs;
+};
+
 console.log(
-  longestStringInArray([
-    "string",
-    "ts",
-    "aaaaaaaaaaaaaaaaaaa",
-    "long",
-    "shortest",
-  ])
+  stringsLongerThan(
+    ["string", "ts", "aaaaaaaaaaaaaaaaaaa", "long", "shortest"],
+    5
+  )
 );
