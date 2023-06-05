@@ -1,11 +1,20 @@
+//1
+const maxOfTwoNumbers = (x, y) => {
+  if (x >= y) {
+    return x;
+  } else {
+    return y;
+  }
+};
+
 //2
 const maxOfThree = (x, y, z) => {
   let max = 0;
-  if (x > y && x > z) {
+  if (x >= y && x >= z) {
     max = x;
-  } else if (y > x && y > z) {
+  } else if (y >= x && y >= z) {
     max = y;
-  } else if (z > x && z > y) {
+  } else if (z >= x && z >= y) {
     max = z;
   }
   return max;
