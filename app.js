@@ -56,6 +56,13 @@ const multiplyArray = (nums) => {
   return product;
 };
 
+//6
+const numofArgs = (...args) => {
+  return args.length;
+};
+
+console.log(numofArgs(4, 65, 6, 8, 8, 7, 5, 4, 4, 12));
+
 //7
 const reverseString = (str) => {
   let newString = [];
