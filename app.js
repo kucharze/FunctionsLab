@@ -7,7 +7,7 @@ const maxOfTwoNumbers = (x, y) => {
   }
 };
 
-console.log(maxOfTwoNumbers(7, 5));
+console.log("Max of two", maxOfTwoNumbers(7, 5));
 
 //2
 const maxOfThree = (x, y, z) => {
@@ -22,7 +22,7 @@ const maxOfThree = (x, y, z) => {
   return max;
 };
 
-console.log(maxOfThree(7, 5, 9));
+console.log("Max of three", maxOfThree(7, 5, 9));
 
 //3
 const isCharAVowel = (char) => {
@@ -40,9 +40,9 @@ const isCharAVowel = (char) => {
   }
 };
 
-console.log(isCharAVowel("a"));
+console.log("Is A a vowel", isCharAVowel("a"));
 
-console.log(isCharAVowel("b"));
+console.log("Is b a vowel", isCharAVowel("b"));
 
 //4
 const sumArray = (nums) => {
@@ -53,7 +53,7 @@ const sumArray = (nums) => {
   return sum;
 };
 
-console.log(sumArray([1, 4, 6, 7, 8]));
+console.log("sum of array [1,4,6,7,8]", sumArray([1, 4, 6, 7, 8]));
 
 //5
 const multiplyArray = (nums) => {
@@ -64,14 +64,17 @@ const multiplyArray = (nums) => {
   return product;
 };
 
-console.log(multiplyArray([1, 4, 6, 7, 8]));
+console.log("Product of array [1,4,6,7,8]", multiplyArray([1, 4, 6, 7, 8]));
 
 //6
 const numofArgs = (...args) => {
   return args.length;
 };
 
-console.log(numofArgs(4, 65, 6, 8, 8, 7, 5, 4, 4, 12));
+console.log(
+  "Num of args passed in with 4, 65, 6, 8, 8, 7, 5, 4, 4, 12",
+  numofArgs(4, 65, 6, 8, 8, 7, 5, 4, 4, 12)
+);
 
 //7
 const reverseString = (str) => {
@@ -84,7 +87,8 @@ const reverseString = (str) => {
 
   return newString.join("");
 };
-console.log(reverseString("string"));
+console.log("Reverse string 'string'", reverseString("string"));
+
 //8
 const longestStringInArray = (strs) => {
   let longest = "";
@@ -98,6 +102,7 @@ const longestStringInArray = (strs) => {
 };
 
 console.log(
+  "Longest string of ['string','ts', 'aaaaaaaaaaaaaaaaaaa','long', 'shortest']",
   longestStringInArray([
     "string",
     "ts",
@@ -120,6 +125,7 @@ const stringsLongerThan = (strs, len) => {
 };
 
 console.log(
+  "Find string longer than 5 for ['string','ts', 'aaaaaaaaaaaaaaaaaaa','long', 'shortest']",
   stringsLongerThan(
     ["string", "ts", "aaaaaaaaaaaaaaaaaaa", "long", "shortest"],
     5
