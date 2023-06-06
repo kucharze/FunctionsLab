@@ -22,6 +22,8 @@ const maxOfThree = (x, y, z) => {
   return max;
 };
 
+console.log(maxOfThree(7, 5, 9));
+
 //3
 const isCharAVowel = (char) => {
   if (
@@ -38,6 +40,10 @@ const isCharAVowel = (char) => {
   }
 };
 
+console.log(isCharAVowel("a"));
+
+console.log(isCharAVowel("b"));
+
 //4
 const sumArray = (nums) => {
   let sum = 0;
@@ -47,6 +53,8 @@ const sumArray = (nums) => {
   return sum;
 };
 
+console.log(sumArray([1, 4, 6, 7, 8]));
+
 //5
 const multiplyArray = (nums) => {
   let product = 1;
@@ -55,6 +63,8 @@ const multiplyArray = (nums) => {
   }
   return product;
 };
+
+console.log(multiplyArray([1, 4, 6, 7, 8]));
 
 //6
 const numofArgs = (...args) => {
@@ -74,7 +84,7 @@ const reverseString = (str) => {
 
   return newString.join("");
 };
-
+console.log(reverseString("string"));
 //8
 const longestStringInArray = (strs) => {
   let longest = "";
@@ -86,6 +96,16 @@ const longestStringInArray = (strs) => {
 
   return longest;
 };
+
+console.log(
+  longestStringInArray([
+    "string",
+    "ts",
+    "aaaaaaaaaaaaaaaaaaa",
+    "long",
+    "shortest",
+  ])
+);
 
 //9
 const stringsLongerThan = (strs, len) => {
